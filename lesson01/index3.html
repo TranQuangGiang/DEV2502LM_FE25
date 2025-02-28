@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid rgb(49, 49, 49);
+            padding: 6px;
+        }
+        th {
+            background-color: rgb(129, 129, 251);
+            color: white;
+        }
+        button {
+            border: none;
+            color: white;
+            background-color: rgb(236, 69, 69);
+            border-radius: 2px;
+        }
+    </style>
+</head>
+<body>
+    <table width="600px">
+        <thead>
+            <tr>
+                <th>STT</th>
+                <th>MSV</th>
+                <th>Họ tên</th>
+                <th>Ngày sinh</th>
+                <th>Điểm</th>
+                <th>Tổng</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody align="center">
+            <tr>
+                <td>1</td>
+                <td>PH52177</td>
+                <td>Trần Quang Giang</td>
+                <td>06-09-2005</td>
+                <td>9</td>
+                <td rowspan="4">24</td>
+                <td>
+                    <button>Xóa</button>
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>PH52178</td>
+                <td>Trần Thị Thơm</td>
+                <td>26-02-2005</td>
+                <td>8</td>
+                <td>
+                    <button>Xóa</button>
+                </td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>PH52179</td>
+                <td>Nguyễn Thị Hồng</td>
+                <td>06-11-2003</td>
+                <td>7</td>
+                <td>
+                    <button>Xóa</button>
+                </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4">Điểm trung bình: </td>
+                <td colspan="3">8</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

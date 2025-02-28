@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            border: 1px solid black;
+            width: 350px;
+        }
+        thead tr th {
+            color: #0000AA;
+            text-transform: uppercase;
+        }
+        .tr1 td small {
+            color: #CC6633;
+            font-weight: 600;
+        }
+        .tr1 td big {
+            color: #009900;
+        }
+        .tr2 td big {
+            color: #CC6633;
+            font-weight: 600;
+        }
+        .tr3 td sup {
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr align="center">
+                <th>Thông tin sinh viên</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="tr1">
+                <td colspan="3">Họ tên sinh viên: <small>Nguyễn Văn A</small> - <big>0912345</big></td>
+            </tr>
+            <tr class="tr2">
+                <td colspan="3">Lớp: <big>09</big> <small>ITEC</small></td>
+            </tr>
+            <tr class="tr3">
+                <td colspan="3">Môn học: <sup>Nhập môn</sup> <strong>Thiết kế <a href="">&</a> Lập trình W <sup>@</sup> <sub>b</sub></strong></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

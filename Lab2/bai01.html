@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            background: #FFFAF0;
+        }
+        table {
+            width: 70%;
+            margin: 0px auto;
+            border-collapse: collapse;
+        }
+        thead th {
+            border: 1px solid #ccc;
+            padding: 15px;
+            text-align: center;
+        }
+        tbody td {
+            border: 1px solid #ccc;
+            padding: 15px;
+            text-align: center;
+        }
+        table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        table tr:nth-child(odd) {
+            background-color: #fff;
+        }
+        .fa-info {
+            width: 15px;
+            background-color: #fff;
+            height: 15px;
+            color: #3cafa4;
+            font-size: 13px;
+            border-radius: 50%;
+        }
+        .span_one {
+            width: 24px;
+            height: 24px;
+            display: block;
+            background-color: #3cafa4;
+            line-height: 22px;
+        }
+        .fa-pen-to-square {
+            width: 24px;
+            height: 24px;
+            font-size: 13px;
+            color: white;
+            background-color: #caa859;
+            line-height: 22px;
+        }
+        .fa-trash {
+            width: 24px;
+            height: 24px;
+            font-size: 13px;
+            color: white;
+            background-color: #d06a6e;
+            line-height: 22px;
+        }
+        .td-icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            border: 0.1px solid #ccc;
+        }
+        .td-icon i {
+            cursor: pointer;
+        }
+        tfoot td {
+            border: 1px solid #ccc;
+            padding: 15px;
+            font-weight: 600;
+        }
+        tfoot td small {
+            padding: 4px 8px;
+            background-color: brown;
+            color: white;
+        }
+        .td-color {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>STT</th>
+                <th>Tên danh mục</th>
+                <th>Ngày sửa</th>
+                <th>Thứ tự</th>
+                <th>Trạng thái</th>
+                <th>Tác vụ</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>PHÒNG KHÁCH</td>
+                <td>7/8/2020</td>
+                <td>1</td>
+                <td class="td-color">Hoạt động</td>
+                <td class="td-icon">
+                    <span class="span_one">
+                        <i class="fa-solid fa-info"></i>
+                    </span>
+                    <i class="fa-solid fa-pen-to-square"></i>
+                    <i class="fa-solid fa-trash"></i>
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>PHÒNG NGỦ</td>
+                <td>7/8/2020</td>
+                <td>2</td>
+                <td class="td-color">Hoạt động</td>
+                <td class="td-icon">
+                    <span class="span_one">
+                        <i class="fa-solid fa-info"></i>
+                    </span>
+                    <i class="fa-solid fa-pen-to-square"></i>
+                    <i class="fa-solid fa-trash"></i>
+                </td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>PHÒNG BẾP</td>
+                <td>7/8/2020</td>
+                <td>3</td>
+                <td class="td-color">Hoạt động</td>
+                <td class="td-icon">
+                    <span class="span_one">
+                        <i class="fa-solid fa-info"></i>
+                    </span>
+                    <i class="fa-solid fa-pen-to-square"></i>
+                    <i class="fa-solid fa-trash"></i>
+                </td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>PHÒNG TẮM</td>
+                <td>7/8/2020</td>
+                <td>4</td>
+                <td class="td-color">Hoạt động</td>
+                <td class="td-icon">
+                    <span class="span_one">
+                        <i class="fa-solid fa-info"></i>
+                    </span>
+                    <i class="fa-solid fa-pen-to-square"></i>
+                    <i class="fa-solid fa-trash"></i>
+                </td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>TRẺ EM</td>
+                <td>7/8/2020</td>
+                <td>5</td>
+                <td class="td-color">Hoạt động</td>
+                <td class="td-icon">
+                    <span class="span_one">
+                        <i class="fa-solid fa-info"></i>
+                    </span>
+                    <i class="fa-solid fa-pen-to-square"></i>
+                    <i class="fa-solid fa-trash"></i>
+                </td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>VĂN PHÒNG</td>
+                <td>7/8/2020</td>
+                <td>6</td>
+                <td class="td-color">Hoạt động</td>
+                <td class="td-icon">
+                    <span class="span_one">
+                        <i class="fa-solid fa-info"></i>
+                    </span>
+                    <i class="fa-solid fa-pen-to-square"></i>
+                    <i class="fa-solid fa-trash"></i>
+                </td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>CẦU THANG </td>
+                <td>7/8/2020</td>
+                <td>7</td>
+                <td class="td-color">Hoạt động</td>
+                <td class="td-icon">
+                    <span class="span_one">
+                        <i class="fa-solid fa-info"></i>
+                    </span>
+                    <i class="fa-solid fa-pen-to-square"></i>
+                    <i class="fa-solid fa-trash"></i>
+                </td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>TRANG TRÍ</td>
+                <td>7/8/2020</td>
+                <td>8</td>
+                <td class="td-color">Hoạt động</td>
+                <td class="td-icon">
+                    <span class="span_one">
+                        <i class="fa-solid fa-info"></i>
+                    </span>
+                    <i class="fa-solid fa-pen-to-square"></i>
+                    <i class="fa-solid fa-trash"></i>
+                </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td colspan="6">Tổng số có : <small>8</small> danh mục</td>
+        </tfoot>
+    </table>
+</body>
+</html>
