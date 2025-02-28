@@ -10,19 +10,28 @@
             background: #FFFAF0;
         }
         table {
-            width: 60%;
+            width: 100%;
             margin: 0px auto;
             border-collapse: collapse;
         }
         thead th {
             border: 1px solid #ccc;
             padding: 15px;
-            text-align: left;
+            text-align: center;
             text-transform: uppercase;
+        }
+        thead tr th i {
+            font-size: 13px;
+            color: #ccc;
+            cursor: pointer;
+            margin-right: 3px;
         }
         tbody td {
             border: 1px solid #ccc;
             padding: 15px;
+        }
+        .oldPrice, .newPrice {
+            text-align: right;
         }
         table tr:nth-child(even) {
             background-color: #f2f2f2;
@@ -92,7 +101,7 @@
             color: green;
         }
         form {
-            width: 60%;
+            width: 100%;
             margin: 0px auto;
             display: flex;
             justify-content: space-between;
@@ -129,7 +138,7 @@
             background-color: #33CCFF;
         }
         .page {
-            width: 60%;
+            width: 100%;
             margin: 0px auto;
             display: flex;
             align-items: center;
@@ -141,12 +150,6 @@
             height: 30px;
             background-color: #3300FF;
             color: #fff;
-        }
-        .number {
-            text-align: right;
-        }
-        .numberTH {
-            width: 30px;
         }
     </style>
 </head>
@@ -166,21 +169,27 @@
     <table>
         <thead>
             <tr>
-                <th class="numberTH">STT</th>
-                <th>Tên đặc tính kỹ thuật</th>
-                <th>Ngày sửa</th>
-                <th>Thứ tự</th>
-                <th>Trạng thái</th>
+                <th>.No</th>
+                <th><i class="fa-solid fa-sort"></i> Mã</th>
+                <th><i class="fa-solid fa-sort"></i> Tên sản phẩm</th>
+                <th><i class="fa-solid fa-sort"></i> Giá cũ</th>
+                <th><i class="fa-solid fa-sort"></i> Giá mới</th>
+                <th><i class="fa-solid fa-sort"></i> Ngày cập nhập</th>
+                <th><i class="fa-solid fa-sort"></i> Lượt xem</th>
+                <th><i class="fa-solid fa-sort"></i> Trạng thái</th>
                 <th><i class="fa-solid fa-list-check"></i> Tác vụ</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td class="number">1</td>
-                <td>Đặc trưng</td>
-                <td>20/7/2020</td>
                 <td>1</td>
-                <td class="td-color">Hoạt động</td>
+                <td>PH002</td>
+                <td>Bàn uống nước</td>
+                <td class="oldPrice">0</td>
+                <td class="newPrice">0</td>
+                <td>20/8/2020</td>
+                <td>0</td>
+                <td class="td-color">Hiển thị</td>
                 <td class="td-icon">
                     <span class="span_one">
                         <i class="fa-solid fa-info"></i>
@@ -190,11 +199,14 @@
                 </td>
             </tr>
             <tr>
-                <td class="number">2</td>
-                <td>Thông số</td>
-                <td>20/7/2020</td>
                 <td>2</td>
-                <td class="td-color">Hoạt động</td>
+                <td>PH012</td>
+                <td>Giường châu âu</td>
+                <td class="oldPrice">25999000</td>
+                <td class="oldPrice">22999000</td>
+                <td>20/8/2020</td>
+                <td>0</td>
+                <td class="td-color">Hiển thị</td>
                 <td class="td-icon">
                     <span class="span_one">
                         <i class="fa-solid fa-info"></i>
@@ -204,11 +216,14 @@
                 </td>
             </tr>
             <tr>
-                <td class="number">3</td>
-                <td>Bảo quản</td>
-                <td>20/7/2020</td>
-                <td>3</td>
-                <td class="td-color">Hoạt động</td>
+                <td>33</td>
+                <td>PH002</td>
+                <td>Kệ đầu giường</td>
+                <td class="oldPrice">20899000</td>
+                <td class="oldPrice">18899000</td>
+                <td>31/7/2020</td>
+                <td>0</td>
+                <td class="td-color">Hiển thị</td>
                 <td class="td-icon">
                     <span class="span_one">
                         <i class="fa-solid fa-info"></i>
@@ -218,11 +233,14 @@
                 </td>
             </tr>
             <tr>
-                <td class="number">4</td>
-                <td>Bảo hành</td>
-                <td>20/7/2020</td>
                 <td>4</td>
-                <td class="td-color">Hoạt động</td>
+                <td>PH011</td>
+                <td>Giường gỗ</td>
+                <td class="oldPrice">20999000</td>
+                <td class="oldPrice">18999000</td>
+                <td>31/7/2020</td>
+                <td>0</td>
+                <td class="td-color">Hiển thị</td>
                 <td class="td-icon">
                     <span class="span_one">
                         <i class="fa-solid fa-info"></i>
@@ -232,11 +250,116 @@
                 </td>
             </tr>
             <tr>
-                <td class="number">5</td>
-                <td>Cam kết</td>
-                <td>24/7/2020</td>
                 <td>5</td>
-                <td class="td-color">Hoạt động</td>
+                <td>PH009</td>
+                <td>Tủ quần áo</td>
+                <td class="oldPrice">15999000</td>
+                <td class="oldPrice">12999000</td>
+                <td>31/7/2020</td>
+                <td>0</td>
+                <td class="td-color">Hiển thị</td>
+                <td class="td-icon">
+                    <span class="span_one">
+                        <i class="fa-solid fa-info"></i>
+                    </span>
+                    <i class="fa-solid fa-pen-to-square"></i>
+                    <i class="fa-solid fa-trash"></i>
+                </td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>PH007</td>
+                <td>Kệ để đồ</td>
+                <td class="oldPrice">15999000</td>
+                <td class="oldPrice">12999000</td>
+                <td>31/7/2020</td>
+                <td>0</td>
+                <td class="td-color">Hiển thị</td>
+                <td class="td-icon">
+                    <span class="span_one">
+                        <i class="fa-solid fa-info"></i>
+                    </span>
+                    <i class="fa-solid fa-pen-to-square"></i>
+                    <i class="fa-solid fa-trash"></i>
+                </td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>PH008</td>
+                <td>Kệ TV</td>
+                <td class="oldPrice">15999000</td>
+                <td class="oldPrice">12999000</td>
+                <td>31/7/2020</td>
+                <td>0</td>
+                <td class="td-color">Hiển thị</td>
+                <td class="td-icon">
+                    <span class="span_one">
+                        <i class="fa-solid fa-info"></i>
+                    </span>
+                    <i class="fa-solid fa-pen-to-square"></i>
+                    <i class="fa-solid fa-trash"></i>
+                </td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>PH006</td>
+                <td>Bàn uống nước 2</td>
+                <td class="oldPrice">15999000</td>
+                <td class="oldPrice">12999000</td>
+                <td>31/7/2020</td>
+                <td>0</td>
+                <td class="td-color">Hiển thị</td>
+                <td class="td-icon">
+                    <span class="span_one">
+                        <i class="fa-solid fa-info"></i>
+                    </span>
+                    <i class="fa-solid fa-pen-to-square"></i>
+                    <i class="fa-solid fa-trash"></i>
+                </td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>PH003</td>
+                <td>Giường hộp thiết kế sang trọng tiện ích</td>
+                <td class="oldPrice">15999000</td>
+                <td class="oldPrice">12999000</td>
+                <td>31/7/2020</td>
+                <td>0</td>
+                <td class="td-color">Hiển thị</td>
+                <td class="td-icon">
+                    <span class="span_one">
+                        <i class="fa-solid fa-info"></i>
+                    </span>
+                    <i class="fa-solid fa-pen-to-square"></i>
+                    <i class="fa-solid fa-trash"></i>
+                </td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>PH005</td>
+                <td>Bàn ăn nhà bếp sang trọng</td>
+                <td class="oldPrice">15999000</td>
+                <td class="oldPrice">12999000</td>
+                <td>28/7/2020</td>
+                <td>0</td>
+                <td class="td-color">Hiển thị</td>
+                <td class="td-icon">
+                    <span class="span_one">
+                        <i class="fa-solid fa-info"></i>
+                    </span>
+                    <i class="fa-solid fa-pen-to-square"></i>
+                    <i class="fa-solid fa-trash"></i>
+                </td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>PH001</td>
+                <td>Bàn tiếp khách</td>
+                <td class="oldPrice">12999000</td>
+                <td class="oldPrice">9999000</td>
+                <td>27/7/2020</td>
+                <td>0</td>
+                <td class="td-color">Hiển thị</td>
                 <td class="td-icon">
                     <span class="span_one">
                         <i class="fa-solid fa-info"></i>
@@ -247,7 +370,7 @@
             </tr>
         </tbody>
         <tfoot>
-            <td colspan="6">Tổng số có : <small>8</small> chất liệu</td>
+            <td colspan="9">Tổng số có : <small>11</small> sản phẩm</td>
         </tfoot>
     </table>
     <div class="page">

@@ -10,19 +10,18 @@
             background: #FFFAF0;
         }
         table {
-            width: 70%;
+            width: 60%;
             margin: 0px auto;
             border-collapse: collapse;
         }
         thead th {
             border: 1px solid #ccc;
             padding: 15px;
-            text-align: center;
+            text-align: left;
         }
         tbody td {
             border: 1px solid #ccc;
             padding: 15px;
-            text-align: center;
         }
         table tr:nth-child(even) {
             background-color: #f2f2f2;
@@ -63,10 +62,10 @@
         }
         .td-icon {
             display: flex;
-            justify-content: center;
             align-items: center;
             gap: 10px;
             border: 0.1px solid #ccc;
+            text-align: center;
         }
         .td-icon i {
             cursor: pointer;
@@ -84,23 +83,29 @@
         .td-color {
             color: green;
         }
+        .number {
+            text-align: right;
+        }
+        .numberTH {
+            width: 30px;
+        }
     </style>
 </head>
 <body>
     <table>
         <thead>
             <tr>
-                <th>STT</th>
+                <th class="numberTH">STT</th>
                 <th>Tên danh mục</th>
                 <th>Ngày sửa</th>
                 <th>Thứ tự</th>
                 <th>Trạng thái</th>
-                <th>Tác vụ</th>
+                <th><i class="fa-solid fa-list-check"></i> Tác vụ</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>1</td>
+                <td class="number">1</td>
                 <td>PHÒNG KHÁCH</td>
                 <td>7/8/2020</td>
                 <td>1</td>
@@ -114,7 +119,7 @@
                 </td>
             </tr>
             <tr>
-                <td>2</td>
+                <td class="number">2</td>
                 <td>PHÒNG NGỦ</td>
                 <td>7/8/2020</td>
                 <td>2</td>
@@ -128,7 +133,7 @@
                 </td>
             </tr>
             <tr>
-                <td>3</td>
+                <td class="number">3</td>
                 <td>PHÒNG BẾP</td>
                 <td>7/8/2020</td>
                 <td>3</td>
@@ -142,7 +147,7 @@
                 </td>
             </tr>
             <tr>
-                <td>4</td>
+                <td class="number">4</td>
                 <td>PHÒNG TẮM</td>
                 <td>7/8/2020</td>
                 <td>4</td>
@@ -156,7 +161,7 @@
                 </td>
             </tr>
             <tr>
-                <td>5</td>
+                <td class="number">5</td>
                 <td>TRẺ EM</td>
                 <td>7/8/2020</td>
                 <td>5</td>
@@ -170,7 +175,7 @@
                 </td>
             </tr>
             <tr>
-                <td>6</td>
+                <td class="number">6</td>
                 <td>VĂN PHÒNG</td>
                 <td>7/8/2020</td>
                 <td>6</td>
@@ -184,7 +189,7 @@
                 </td>
             </tr>
             <tr>
-                <td>7</td>
+                <td class="number">7</td>
                 <td>CẦU THANG </td>
                 <td>7/8/2020</td>
                 <td>7</td>
@@ -198,7 +203,7 @@
                 </td>
             </tr>
             <tr>
-                <td>8</td>
+                <td class="number">8</td>
                 <td>TRANG TRÍ</td>
                 <td>7/8/2020</td>
                 <td>8</td>
