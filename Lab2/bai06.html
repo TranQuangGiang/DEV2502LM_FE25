@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+        form {
+            width: 550px;
+            margin: 0px auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        form label {
+            padding: 10px 0px;
+            color: gray;
+            font-weight: 700;
+        }
+        form h3 {
+            width: 100%;
+            height: 50px;
+            background-color: #FF6A6A;
+            line-height: 50px;
+            padding-left: 15px;
+            font-weight: 600;
+            color: white;
+        }
+        form input {
+            height: 40px;
+            border-radius: 4px;
+            padding-left: 10px;
+            border: 1px solid #ccc;
+        }
+        form input:focus {
+            outline: none;
+        }
+        form textarea {
+            border-radius: 5px;
+            padding-left: 10px;
+            padding-top: 10px;
+            border: 1px solid #ccc;
+        }
+        form textarea:focus {
+            outline: none;
+        }
+        .trangthai {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #ccc;
+        }
+        .trangthai h4 {
+            font-size: 17px;
+            color: gray;
+        }
+        .trangthai input {
+            margin-left: 45px;
+        }
+        .button {
+            position: relative;
+            width: 100%;
+        }
+        .buttonContent {
+            position: absolute;
+            right: 0;
+            top: 30px;
+        }
+        .buttonContent button {
+            width: 130px;
+            height: 40px;
+            border-radius: 3px;
+            border: 0;
+            cursor: pointer;
+        }
+        .reset {
+            background-color: #FF6A6A;
+            font-size: 14px;
+            font-weight: 500;
+            color: white;
+        }
+        .submit {
+            background-color: #3CB371;
+            font-size: 14px;
+            font-weight: 500;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <h3>Thông tin danh mục chất liêu</h3>
+        <label for=""> Tên (Title)</label>
+        <input type="text">
+        <label for=""> Từ khóa <span>SEO</span></label>
+        <input type="text">
+        <label for=""> Mô tả <span>SEO</span></label>
+        <input type="text">
+        <label for=""> Ghi chú</label>
+        <textarea name="" id="" rows="4"></textarea>
+        <span class="trangthai"> 
+            <h4>Trạng thái</h4>
+            <input type="radio" name="luachon" id="hoatdong"> <label for="hoatdong">Hoạt động</label>
+            <input type="radio" name="luachon" id="dangkhoa"> <label for="dangkhoa">Đang khóa</label>
+        </span>
+        <div class="button">
+            <span class="buttonContent">
+                <button class="reset" type="reset"><i class="fa-solid fa-reply-all"></i> Nhập lại</button>
+                <button class="submit" type="submit"><i class="fa-solid fa-floppy-disk"></i> Ghi lại</button>
+            </span>
+        </div>
+    </form>
+</body>
+</html>

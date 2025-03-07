@@ -1,0 +1,128 @@
+body {
+    padding: 0px;
+    margin: 0px;
+}
+.container {
+    width: 99%;
+    margin: 0px auto;
+    background-color: #F2F4F7;
+    height: 1000px;
+} 
+.formContent {
+    width: 99%;
+    display: flex;
+}
+form h1 {
+    margin: 0px;
+    padding-top: 10px;
+}
+form {
+    width: 70%;
+}
+.inputOne {
+    background-color: white;
+    border-radius: 5px;
+    width: 100%;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    margin: 25px 0px;
+}
+.inputOne input{
+    width: 100%;
+    height: 40px;
+    border: 0;
+    outline: none;
+    background-color: white;
+    padding-left: 15px;
+}
+.inputOne label {
+    width: 120px;
+    height: 45px;
+    top: 0;
+    left: 0;
+    padding-left: 15px;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 45px;
+    background-color: #e9ecef;
+    border: 1px solid #ccc;
+}
+.inputTwo label{
+    width: 120px;
+    height: 95px;
+    top: 0;
+    left: 0;
+    padding-left: 15px;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 95px;
+    background-color: #e9ecef;
+    border: 1px solid #ccc;
+}
+.inputTwo {
+    background-color: white;
+    border-radius: 5px;
+    width: 100%;
+    height: 95px;
+    display: flex;
+    align-items: center;
+    margin: 25px 0px;
+}
+.inputTwo textarea {
+    width: 100%;
+    height: 83px;
+    padding-left: 10px;
+    padding-top: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+.logo {
+    margin-top: 45px;
+    width: 27%;
+    margin-left: 20px;
+}
+.logo h3 {
+    width: 100%;
+    height: 45px;
+    padding-left: 15px;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 45px;
+    background-color: #e9ecef;
+    border: 1px solid #ccc;
+}
+.logo img {
+    margin-top: 15px;
+    margin-left: 55px;
+    border: 1px solid #ccc;
+}
+.button {
+    position: relative;
+    width: 97%;
+    margin: 0px auto;
+}
+.buttonContent {
+    position: absolute;
+    right: 0;
+    top: 30px;
+}
+.buttonContent button {
+    width: 120px;
+    height: 35px;
+    border-radius: 3px;
+    border: 0;
+    cursor: pointer;
+}
+.reset {
+    background-color: #FF6A6A;
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+}
+.submit {
+    background-color: #3CB371;
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+}

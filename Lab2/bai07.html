@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            width: 600px;
+            margin: 0px auto
+        }
+        table tbody tr {
+            display: flex;
+        }
+        table tbody tr td img {
+            width: 360px;
+            height: 420px;
+            padding-top: 25px;
+            padding-right: 20px;
+        }
+        table tbody tr td form {
+            width: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 20px;
+        }
+        table tbody tr td h3 {
+            color: #bd9460;
+            font-weight: 900;
+            font-size: 22px;
+            font-family: 'Times New Roman', Times, serif;
+            text-transform: uppercase;
+        }
+        table tbody tr td form input {
+            height: 40px;
+            width: 100%;
+            padding-left: 10px;
+            border: 2px solid #bd9460;
+            font-weight: 600;
+            color: black;
+        }
+        table tbody tr td form input:focus {
+            outline: none;
+        }
+        table tbody tr td form button {
+            width: 100px;
+            height: 40px;
+            background-color: #bd9460;
+            font-weight: 600;
+            color: white;
+            border: 0;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tbody>
+            <tr>
+                <td>
+                    <img src="./img/Baltoro_High_Gloss_Hydraulic_Storage_Bed_King_LP.jpg" alt="">
+                </td>
+                <td>
+                    <h3>Liên hệ với chúng tôi</h3>
+                    <form action="">
+                        <input type="text" placeholder="Họ và tên">
+                        <input type="email" placeholder="Email">
+                        <input type="tel" placeholder="Số điện thoại">
+                        <input type="text" placeholder="Nội dung">
+                        <button>Gửi</button>
+                    </form>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

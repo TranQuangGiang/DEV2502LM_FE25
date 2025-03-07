@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            padding: 0px;
+            margin: 0px;
+            background-color: #F2F4F7;
+        }
+        .container {
+            width: 99%;
+            margin: 0px auto;
+        }
+        .container h1 {
+            padding-top: 20px;
+            padding-bottom: 10px;
+            padding-left: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+            font-size: 24px;
+        }
+        form {
+            width: 98%;
+            margin: 0px auto;
+        }
+        .inputOne {
+            background-color: white;
+            border-radius: 5px;
+            width: 100%;
+            height: 45px;
+            display: flex;
+            align-items: center;
+            margin: 25px 0px;
+        }
+        .inputOne input, select{
+            width: 100%;
+            height: 40px;
+            border: 0;
+            background-color: white;
+            padding-left: 15px;
+        }
+        .inputOne input, select:focus {
+            outline: 0;
+        }
+        option {
+            background: #f8f8f8;
+            padding: 10px;
+        }
+        .inputOne label {
+            width: 120px;
+            height: 45px;
+            top: 0;
+            left: 0;
+            padding-left: 15px;
+            font-weight: 500;
+            font-size: 17px;
+            line-height: 45px;
+            background-color: #e9ecef;
+            border: 1px solid #ccc;
+        }
+        section {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+        .inputTwo {
+            width: 32%;
+            background-color: white;
+            border-radius: 5px;
+            height: 45px;
+            display: flex;
+            align-items: center;
+        }
+        .inputTwo input {
+            width: 100%;
+            height: 40px;
+            border: 0;
+            background-color: white;
+            padding-left: 15px;
+            outline: 0;
+        }
+        .inputTwo label {
+            width: 155px;
+            height: 45px;
+            top: 0;
+            left: 0;
+            padding-left: 15px;
+            font-weight: 500;
+            font-size: 17px;
+            line-height: 45px;
+            background-color: #e9ecef;
+            border: 1px solid #ccc;
+        }
+        .content {
+            margin-top: 20px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .content label {
+            margin-bottom: 10px;
+        }
+        .content textarea {
+            width: 100%;
+            border: 1px solid #ccc;
+            border: 0;
+            outline: 0;
+            background-color: white;
+            padding-left: 10px;
+            padding-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Thêm mới sản phẩm</h1>
+        <form action="">
+            <span class="inputOne">
+                <label for="">Mã sản phẩm</label>
+                <input type="text">
+            </span>
+            <span class="inputOne">
+                <label for="">Tên sản phẩm</label>
+                <input type="text">
+            </span>
+            <span class="inputOne">
+                <label for="">URL</label>
+                <input type="text">
+            </span>
+            <span class="inputOne">
+                <label for="">Loại sản phẩm</label>
+                <select name="" id="">
+                    <option value="PHÒNG KHÁCH">PHÒNG KHÁCH</option>
+                    <option value="PHÒNG BẾP">PHÒNG BẾP</option>
+                    <option value="PHÒNG NGỦ">PHÒNG NGỦ</option>
+                    <option value="PHÒNG VỆ SINH">PHÒNG VỆ SINH</option>
+                </select>
+            </span>
+            <section>
+                <span class="inputTwo">
+                    <label for="">Giá cũ</label>
+                    <input type="number" placeholder="0">
+                </span>
+                <span class="inputTwo">
+                    <label for="">Giá Mới</label>
+                    <input type="number" placeholder="0">
+                </span>
+                <span class="inputTwo">
+                    <label for="">Size</label>
+                    <input type="text">
+                </span>
+            </section>
+            <span class="content">
+                <label for="">Mô tả sản phẩm</label>
+                <textarea name="" id="" rows="9"></textarea>
+            </span>
+        </form>
+    </div>
+</body>
+</html>
