@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .error {
+            font-size: 13px;
+            color: red;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <form action="" method="POST" enctype="multipart/form-data">
+        <div class="form-control">
+            <label for="email">Email</label>
+            <input type="email"  onblur="checkEmail()" name="email" id="email">
+            <p class="error" >Email sai định dạng vui lòng kiểm tra lại email</p>
+        </div>
+        <div class="form-control">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password">
+        </div>
+        <input type="submit" name="Login" id="Login" value="Đăng nhập">
+    </form>
+    <div id="phone">
+
+    </div>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script>
+        var rexgEmail = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+        
+        /* Cách 1
+        function checkEmail() {
+            const email = $('#email').val();
+            if (rexgEmail.test(email)){
+                $('.error').hide();
+            }else {
+                $('.error').show();
+            }
+             
+        }
+        */
+        
+
+        
+        // var rexgPhone = /^(0|\+84)[3-9][0-9]{8}$/;
+        // if (rexgPhone.test('0348892533')){
+        //     $('#phone').html('0348892533');
+        // }else {
+        //     $('#phone').html('lỗi');
+        // }
+    </script>
+</body>
+</html>

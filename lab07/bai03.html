@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main {
+            width: 670px;
+            height: 446px;
+            margin: 0 auto;
+        }
+        #thum ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        #thum ul li  {
+            float: left;
+            margin-right: 2px;
+        }
+        #thum ul li a img {
+            width: 105px;
+            height: 60px;
+            border: solid 2px #ccc;
+        }
+        .actived {
+            border: solid 4px red !important;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="image">
+            <img src="./img/anh01.jpg" alt="">
+        </div>
+        <div id="thum">
+            <ul>
+                <li><a href="">
+                    <img src="./img/anh01.jpg" alt="" class="actived">
+                </a></li>
+                <li><a href="">
+                    <img src="./img/anh02.jpg" alt="">
+                </a></li>
+                <li><a href="">
+                    <img src="./img/anh03.jpg" alt="">
+                </a></li>
+                <li><a href="">
+                    <img src="./img/anh04.jpg" alt="">
+                </a></li>
+                <li><a href="">
+                    <img src="./img/anh05.jpg" alt="">
+                </a></li>
+            </ul>
+        </div>
+    </div>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("a > img").click(function(event) {
+                event.preventDefault();
+                let imgSrc = $(this).attr('src');
+                console.log(imgSrc);
+                
+                $("#image > img ").attr({
+                    'src': imgSrc
+                });
+                $("a > img").removeClass('actived');
+                $(this).addClass('actived');
+            })
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Devmaster</h2>
+    <div>
+        <button onclick="chanleColor('black')" class="btn-change" data-color = "black">Màu đen</button>
+        <button onclick="chanleColor('red')" class="btn-change" data-color = "red">Màu đỏ</button>
+        <button onclick="chanleColor('blue')" class="btn-change" data-color = "blue" >Màu xanh</button>
+        <button onclick="chanleColor('yellow')" class="btn-change" data-color = "yellow">Màu vàng</button>
+        <button onclick="chanleColor('violet')" class="btn-change" data-color = "violet">Màu tím</button>
+    </div>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script>
+        // cách 1
+        /* $('button').on("click", function() {
+            // lấy màu sắc trong attr
+            var color = $(this).attr('data-color');
+            $('h2').css("color", color);
+        })
+        */
+       // cách 2
+        function chanleColor(color) {
+            $('h2').css("color", color);
+        }
+    </script>
+</body>
+</html>
